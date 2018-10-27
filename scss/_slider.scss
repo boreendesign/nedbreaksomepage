@@ -8,23 +8,23 @@
                     z-index: 4 !important;
                 }
                 .first_text{
-                    color: #fff;
+                    color: #000;
                     font-family: $mon;
                 }
                 .some_text{
-                    color: #fff;
+                    color: #000;
                     font-family: $lato;
                 }
-                .register_angkar_btn{
+                .go_to_nedbreaks_btn{
                     width: 220px;
-                    border: 2px solid #fff;
+                    border: 2px solid #000;
                     border-radius: 5px;
                     display: inline-block;
                     text-align: center;
                     height: 64px;
                     line-height: 64px;
                     font-size: 16px;
-                    color: #fff;
+                    color: #000;
                     font-family: $mon;
                     text-transform: uppercase;
                     position: relative;
@@ -55,7 +55,7 @@
                             transform: translateX(0);
                         }
                     }
-                    &.purple_s_btn{
+                    &.nedorange_s_btn{
                         &:hover{
                             color: $mainColor;
                         }
@@ -131,7 +131,7 @@
 ============================================================================================ */
 .expert_team_area{
     padding: 100px 0px;
-    &.purple_team{
+    &.nedorange_team{
         .expert_slider{
             .expert_inner{
                 position: relative;
@@ -380,7 +380,7 @@
 /* Sponsors slider css
 ============================================================================================ */
 .sponsors_area{
-    
+
 }
 .sponsor_slider{
     padding: 120px 0px;

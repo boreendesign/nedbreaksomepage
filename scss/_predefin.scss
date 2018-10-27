@@ -87,7 +87,7 @@ body, p, h1, h2, h3, h4, h5, h6{
             margin: auto;
         }
     }
-    &.purple_title{
+    &.nedorange_title{
         h2{
             color: $mainColor;
         }
@@ -149,7 +149,7 @@ body, p, h1, h2, h3, h4, h5, h6{
             background: $baseColor;
         }
     }
-    &.purple_content{
+    &.nedorange_content{
         h2{
             &:before{
                 background: $mainColor;
@@ -189,7 +189,7 @@ body, p, h1, h2, h3, h4, h5, h6{
         color: $gray;
         padding-top: 23px;
     }
-    &.purple_content{
+    &.nedorange_content{
         h2{
             &:before{
                 background: $mainColor;

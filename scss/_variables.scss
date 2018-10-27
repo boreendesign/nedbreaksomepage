@@ -5,9 +5,9 @@ $lato: 'Lato', sans-serif;
 
 /*Color Variables*/
 
-$baseColor: #f8395d;
-$mainColor: #a640d0;
-$par: #a640d0;
+$baseColor: #FAA819;
+$mainColor: #FAA819;
+$par: #FAA819;
 $dip: #222222;
 $gray: #696969;
 
@@ -15,7 +15,7 @@ $gray: #696969;
 
 // Mixins
 @mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
-    transition: $property $duration $animate $delay; 
+    transition: $property $duration $animate $delay;
 }
 
 // Placeholder Mixins

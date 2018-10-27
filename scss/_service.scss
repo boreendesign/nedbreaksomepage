@@ -42,7 +42,7 @@
         }
     }
 }
-.purple_service{
+.nedorange_service{
     .service_item{
         i{
             background: $mainColor;
@@ -65,10 +65,13 @@
 /* Feature area css
 ============================================================================================ */
 .feature_area{
-    background: #f1f1f1;
+    background: #7ACBE1;
     padding: 100px 0px;
+    h2{
+      color:#000;
+    }
 }
-.purple_feature{
+.nedorange_feature{
     .right_side_feature{
         .media{
             .media-left{
@@ -198,7 +201,7 @@
         transform: translateX(-50%) translateY(-50%);
         .item{
             img{
-               
+
             }
         }
     }
@@ -421,7 +424,7 @@
                         .play_pause{
                             i{
                                 & + i{
-                                    
+
                                 }
                             }
                             .video_content{
@@ -444,7 +447,7 @@
             }
         }
     }
-    &.purple_benefits{
+    &.nedorange_benefits{
         .benefits_collaps{
             .panel-group{
                 .panel-default{
@@ -583,6 +586,7 @@
 ============================================================================================ */
 .detail_doc_area{
     padding: 100px 0px;
+    background-color: #79C476;
     .left_detail_content{
         padding-top: 65px;
         p{

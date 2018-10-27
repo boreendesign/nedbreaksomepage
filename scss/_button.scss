@@ -1,16 +1,16 @@
-        
+
 /* Read more css
 ============================================================================================ */
 .read_more{
     width: 150px;
-    border: 1px solid $baseColor;
+    border: 1px solid #000;
     border-radius: 22.5px;
     display: inline-block;
     text-align: center;
     height: 45px;
     line-height: 45px;
     font-size: 14px;
-    color: #fff;
+    color: #000;
     font-family: $mon;
     font-weight: 400;
     text-transform: uppercase;
@@ -38,11 +38,11 @@
     &:hover{
         color: $baseColor;
         &:before{
-            
+
             transform: translateX(-100%);
         }
     }
-    &.purple_read{
+    &.nedorange_read{
         border: 1px solid $mainColor;
         &:before{
             border-bottom: 80px solid $mainColor;
@@ -95,11 +95,11 @@
         background: transparent;
         border-color: $baseColor;
         &:before{
-            
+
             transform: translateX(-100%);
         }
     }
-    &.purple_submit{
+    &.nedorange_submit{
         border: 1px solid $mainColor;
         &:before{
             border-bottom: 80px solid $mainColor;
@@ -156,7 +156,7 @@
             transform: translateX(0);
         }
     }
-    &.purple_pruchase{
+    &.nedorange_pruchase{
         border: 2px solid $mainColor;
         color: $mainColor;
         &:before{
