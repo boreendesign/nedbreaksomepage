@@ -1,5 +1,33 @@
 /* Service area css
+
 ============================================================================================ */
+.mce_inline_error{
+  padding-left:10px;
+  display: table-caption;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+label {
+    display: inline-block;
+    /* margin-bottom: 5px; */
+    font-weight: normal;
+}
+
+.input-group-addon, .input-group-btn{
+  vertical-align: top;
+}
+
 .our_service_area{
     padding: 100px 0px;
 }
@@ -86,15 +114,7 @@
         &:first-child{
             margin-top: 75px;
         }
-        &:hover{
-            .media{
-                .media-body{
-                    h4{
-                        color: $mainColor;
-                    }
-                }
-            }
-        }
+
 }
 }
 .left_side_feature{
@@ -147,18 +167,16 @@
     .media{
         .media-body{
             h4{
-                font-size: 18px;
+                font-size: 20px;
                 font-family: $mon;
                 font-weight: bold;
-                color: $dip;
-                @include transition;
                 padding-bottom: 20px;
             }
             p{
                 font-size: 16px;
                 line-height: 28px;
                 font-family: $lato;
-                color: $gray;
+                min-height:84px;
             }
         }
         .media-left{
@@ -173,14 +191,12 @@
         margin-bottom: 0px;
     }
     &:first-child{
-        margin-top: 75px;
+        margin-top: 25px;
     }
     &:hover{
         .media{
             .media-body{
-                h4{
-                    color: $baseColor;
-                }
+
             }
         }
     }

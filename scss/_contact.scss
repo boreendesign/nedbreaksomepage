@@ -3,10 +3,11 @@
 .subscrib_area{
     padding: 100px 0px;
     .content_title{
-        text-align: center;
+
         margin-bottom: 50px;
         h2{
             text-transform: capitalize;
+            text-align:left;
             &:before{
                 left: 50%;
                 transform: translateX(-50%);
@@ -36,18 +37,18 @@
     input{
         box-shadow: none;
         outline: none;
-        border: 1px solid #dfdfdf;
+        border: 1px solid #2b2b2b;
         height: 50px;
         padding: 0px 15px;
         font-family: $lato;
         border-radius: 0px;
         font-family: $lato;
         font-size: 14px;
-        color: #999999;
+        color: #2b2b2b;
         @include placeholder{
             font-family: $lato;
             font-size: 14px;
-            color: #999999;
+            color: #2b2b2b;
         }
         &:focus{
             outline: none;
@@ -55,45 +56,48 @@
             border: 1px solid $baseColor;
         }
     }
-    .input-group-btn{
-        .btn-default{
-            border: none;
-            background: #e0e0e0;
-            border-radius: 0px;
-            box-shadow: none !important;
-            outline: none !important;
-            height: 50px;
-            width: 140px;
-            position: relative;
-            overflow: hidden;
-            font-size: 12px;
-            color: $dip;
-            text-transform: uppercase;
-            font-weight: 400;
+
+}
+
+.input-group-btn{
+    .btn-default{
+        border: none;
+        background: $baseColor;
+        border-radius: 0px;
+        box-shadow: none !important;
+        outline: none !important;
+        height: 50px;
+        width: 140px;
+        position: relative;
+        overflow: hidden;
+        font-size: 16px;
+        color: $dip;
+        text-transform: uppercase;
+        font-weight: 400;
+        @include transition;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -50px;
+            bottom: 0;
+            left: 0;
+            border-right: 50px solid transparent;
+            border-bottom: 80px solid #2167a1;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
             @include transition;
+            z-index: -1;
+        }
+        &:hover{
+            color: #fff;
             &:before{
-                content: '';
-                position: absolute;
-                top: 0;
-                right: -50px;
-                bottom: 0;
-                left: 0;
-                border-right: 50px solid transparent;
-                border-bottom: 80px solid $baseColor;
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-                @include transition;
-                z-index: -1;
-            }
-            &:hover{
-                color: #fff;
-                &:before{
-                    transform: translateX(0);
-                }
+                transform: translateX(0);
             }
         }
     }
 }
+
 /* End Subscrib area css
 ============================================================================================ */
 
@@ -144,7 +148,7 @@
                                 background: rgba(166, 54, 208, .3);
                             }
                         }
-                       
+
                         &:hover{
                             a{
                                 background: $mainColor;

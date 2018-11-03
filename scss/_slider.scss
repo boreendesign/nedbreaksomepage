@@ -1,5 +1,35 @@
 /* Main Slider css
 ============================================================================================ */
+
+.go_to_nedbreaks_btn{
+  width: 184px;
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #FFAA00;
+      text-align: center;
+      height: 48px;
+      line-height: 48px;
+      /* box-shadow: 10px 5px 5px red; */
+      font-size: 16px;
+      color: #2b2b2b;
+      font-family: "Avenir-Light", sans-serif;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2;
+      transition: all 400ms linear 0s;
+
+    i{
+        padding-right: 14px;
+        font-size: 24px;
+    }
+    &:hover{
+        color: #fff;
+        transform: translateX(0);
+    }
+
+
+
+}
 .slider_area{
     .rev_slider{
         ul{
@@ -15,52 +45,7 @@
                     color: #000;
                     font-family: $lato;
                 }
-                .go_to_nedbreaks_btn{
-                    width: 220px;
-                    border: 2px solid #000;
-                    border-radius: 5px;
-                    display: inline-block;
-                    text-align: center;
-                    height: 64px;
-                    line-height: 64px;
-                    font-size: 16px;
-                    color: #000;
-                    font-family: $mon;
-                    text-transform: uppercase;
-                    position: relative;
-                    z-index: 2;
-                    @include transition;
-                    overflow: hidden;
-                    i{
-                        padding-right: 14px;
-                        font-size: 24px;
-                    }
-                    &:before{
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        right: -50px;
-                        bottom: 0;
-                        left: 0;
-                        border-right: 50px solid transparent;
-                        border-bottom: 80px solid #fff;
-                        -webkit-transform: translateX(-100%);
-                        transform: translateX(-100%);
-                        @include transition;
-                        z-index: -1;
-                    }
-                    &:hover{
-                        color: $baseColor;
-                        &:before{
-                            transform: translateX(0);
-                        }
-                    }
-                    &.nedorange_s_btn{
-                        &:hover{
-                            color: $mainColor;
-                        }
-                    }
-                }
+
                 &.first_slider{
                     .slotholder{
                         position: relative;

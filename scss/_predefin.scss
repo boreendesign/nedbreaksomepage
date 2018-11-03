@@ -58,34 +58,11 @@ body, p, h1, h2, h3, h4, h5, h6{
     h2{
         text-align: center;
         font-size: 36px;
-        font-weight: bold;
-        text-transform: uppercase;
         color: $baseColor;
         padding-bottom: 35px;
         position: relative;
         display: inline-block;
-        &:before{
-            content: "";
-            background: $baseColor;
-            width: 70px;
-            height: 1px;
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            bottom: 10px;
-            margin: auto;
-        }
-        &:after{
-            content: "";
-            background: $par;
-            width: 40px;
-            height: 1px;
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            margin: auto;
-        }
+
     }
     &.nedorange_title{
         h2{
@@ -132,22 +109,14 @@ body, p, h1, h2, h3, h4, h5, h6{
 
 .content_title{
     h2{
-        font-size: 30px;
+        font-size: 24px;
+        line-height: 32px;
         font-family: $mon;
-        text-transform: uppercase;
         color: $dip;
-        font-weight: 400;
+        font-weight: 500;
         position: relative;
         padding-bottom: 25px;
-        &:before{
-            content: "";
-            left: 0px;
-            bottom: 0px;
-            position: absolute;
-            width: 50px;
-            height: 1px;
-            background: $baseColor;
-        }
+
     }
     &.nedorange_content{
         h2{
@@ -247,4 +216,3 @@ body, p, h1, h2, h3, h4, h5, h6{
 }
 /* End Ripple css
 ============================================================================================ */
-
